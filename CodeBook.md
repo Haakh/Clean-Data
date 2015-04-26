@@ -29,3 +29,18 @@ The following files are available for the train and test data. Their description
 - 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
 
 - 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
+
+===========================================================================================================
+=======================================================================================================================
+SCript Definition:
+1. Save all the data files to their respective variables as Described.
+   -X_train.txt   >> trainset
+   -y_train.txt  >> trainlabel
+   -subject_train.txt   >>  trainsubject
+   -X_test.txt  >>  testset
+   - y_test.txt  >> testlabel
+   - subject_test.txt  >>testsubject
+2. Merge both the variables trainset and test set to make a mergeset dataframe.
+3. Similarly merge trainlabel and testlabel -> mergelabel data frame
+4. And trainsubject and test subject to make merge subject data frame.
+5. 
