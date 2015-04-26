@@ -54,4 +54,11 @@ Script Definition
 ##Part 3
 1. Create a variable "activity" and store the activity_label.txt file in it.
 2. Update the mergelabel data frame to update the activity names instead of the labels.
-3. Give an appropriate name to the column in "mergelabel".
+
+##Part 4
+1. make a consolidated data Set called "Data" to combine all three tables.
+2. Give appropriate names to the columns in "data" frame. as there are many columns. I've given names to only 3.
+
+##Part 5
+1. 
+2. 
