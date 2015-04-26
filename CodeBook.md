@@ -1,7 +1,7 @@
 #CodeBook
 The Raw data Source can be found in the Readme file.
 
-*The dataset includes the following files:
+The dataset includes the following files:
 =========================================
 
 - 'README.txt'
