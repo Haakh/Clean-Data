@@ -37,4 +37,11 @@ Data<-cbind(mergesubject,mergelabel,mergeset)
 colnames(Data)<- c("Subject-ID","Activities","Values")
 
 #Part 5
-#
+#Use aggregate function as described for our "Data " data frame.:
+## S3 method for class 'data.frame'
+###aggregate(x, by, FUN, ..., simplify = TRUE)
+tidydata<- aggregate(Data[,3:81], by = list(Data$SubjectID, Data$Activities), FUN = mean)
+# Give names to the columns
+colnames(Data)[1:2] <- c("SubjectID", "Activity")
+#Write the tidy data to a .txt file
+write.table(Data, file="Tidy.txt", row.names = FALSE)
