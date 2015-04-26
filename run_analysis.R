@@ -34,7 +34,7 @@ mergelabel[, 1] <- activitylabel
 #Part 4 :
 # Give appropriate names to a consolidated data
 Data<-cbind(mergesubject,mergelabel,mergeset)
-colnames(Data)<- c("Subject-ID","Activities","Values")
+colnames(Data)<- c("SubjectID","Activities","Values")
 
 #Part 5
 #Use aggregate function as described for our "Data " data frame.:
@@ -42,6 +42,6 @@ colnames(Data)<- c("Subject-ID","Activities","Values")
 ###aggregate(x, by, FUN, ..., simplify = TRUE)
 tidydata<- aggregate(Data[,3:81], by = list(Data$SubjectID, Data$Activities), FUN = mean)
 # Give names to the columns
-colnames(Data)[1:2] <- c("SubjectID", "Activity")
+colnames(tidydata)[1:2] <- c("SubjectID", "Activity")
 #Write the tidy data to a .txt file
-write.table(Data, file="Tidy.txt", row.names = FALSE)
+write.table(tidydata, file="Tidy.txt", row.names = FALSE)
