@@ -60,5 +60,6 @@ Script Definition
 2. Give appropriate names to the columns in "data" frame. as there are many columns. I've given names to only 3.
 
 ##Part 5
-1. 
-2. 
+1. Make a tidydata variable using aggregate function on our "data" data frame.
+2. Give appropriate column names to the final Tidy dataset.
+3. Write this data set Onto a Tidy.txt file
