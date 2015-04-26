@@ -1,4 +1,5 @@
-#Part 1 : Assigning variables to various files as described in codeBook
+#Part 1 
+#Assigning variables to various files as described in codeBook
 # used . to represent a relative patname from working directory
 trainset <- read.table("./Dataset/train/X_train.txt")
 trainlabel <- read.table("./Dataset/train/y_train.txt")
@@ -14,9 +15,22 @@ mergelabel <- rbind(trainlabel, testlabel)
 #Similarly for Subjects f test and train Tables
 mergesubject <- rbind(trainsubject, testsubject)
 
-#Part 2 :Extract the measurements on the mean and standard deviation for each measurement. 
+#Part 2 
+#Extract the measurements on the mean and standard deviation for each measurement. 
 # store the features.txt into a variable
-features <-read.table("./data/features.txt")
+features <-read.table("./Dataset/features.txt")
 # select the desired features and save it into variable
 desired.features <- grep("std|mean", features[,2])
 mergeset <- mergeset[,desired.features]
+
+#Part 3 :
+# iving descriptive activity names to the activities in the data set
+activity <- read.table("./Dataset/activity_labels.txt")
+#make a variable to store the activitues w.r.t its labels temporarily
+activitylabel <- activity[mergelabel[, 1], 2]
+# Update the mergelabel variable with the activity name
+mergelabel[, 1] <- activitylabel
+names(mergelabel) <- "Activity"
+
+#Part 4 :
+
