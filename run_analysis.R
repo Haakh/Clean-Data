@@ -30,7 +30,11 @@ activity <- read.table("./Dataset/activity_labels.txt")
 activitylabel <- activity[mergelabel[, 1], 2]
 # Update the mergelabel variable with the activity name
 mergelabel[, 1] <- activitylabel
-names(mergelabel) <- "Activity"
 
 #Part 4 :
+# Give appropriate names to a consolidated data
+Data<-cbind(mergesubject,mergelabel,mergeset)
+colnames(Data)<- c("Subject-ID","Activities","Values")
 
+#Part 5
+#
