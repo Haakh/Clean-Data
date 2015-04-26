@@ -32,7 +32,8 @@ The following files are available for the train and test data. Their description
 
 ===========================================================================================================
 =======================================================================================================================
-SCript Definition:
+Script Definition
+
 1. Save all the data files to their respective variables as Described.
    -X_train.txt   >> trainset
    -y_train.txt  >> trainlabel
