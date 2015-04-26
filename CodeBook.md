@@ -48,3 +48,7 @@ Script Definition
 4. And trainsubject and test subject to make "mergesubject" data frame.
 
 ##Part 2
+ 1. Get the functions containing only the "mean" or "std" in their names
+ 2. Update the "mergeset" data frame to include only the desired data
+
+##Part 3
