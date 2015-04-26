@@ -33,6 +33,7 @@ The following files are available for the train and test data. Their description
 ===========================================================================================================
 =======================================================================================================================
 Script Definition
+##Part 1
 
 1. Save all the data files to their respective variables as Described
 
@@ -42,7 +43,8 @@ Script Definition
    - X_test.txt  >>  testset
    - y_test.txt  >> testlabel
    - subject_test.txt  >>testsubject
-2. Merge both the variables trainset and test set to make a mergeset dataframe.
-3. Similarly merge trainlabel and testlabel -> mergelabel data frame
-4. And trainsubject and test subject to make merge subject data frame.
-5. 
+2. Merge both the variables trainset and test set to make a "mergeset" dataframe.
+3. Similarly merge trainlabel and testlabel -> "mergelabel" data frame
+4. And trainsubject and test subject to make "mergesubject" data frame.
+
+##Part 2
